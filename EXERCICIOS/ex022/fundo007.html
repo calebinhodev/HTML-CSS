@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #container {
+        position: relative;
+        background-color: blueviolet;
+        height: 96vh;
+        padding: 10px;
+        background-image: url(imagens/target001.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+
+
+      }
+
+    /** Dicas de posicionamento de divs, (imagens e qualquer coisa), nesse caso foi um container, q tinha a propriedade ' position relative', e dentro dele tem um conteudo com o 'position absolute', isso permite o posicionamento dentro da div **/
+
+      #conteudo {
+        position: absolute;
+        height: 200px;
+        background-color: gold;
+        width: 400px;
+text-decoration: lin;
+        left: 50%;
+        top: 50%;
+
+        transform: translate(-50%,
+         -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <section id="container">
+      <article id="conteudo"></article>
+    </section>
+  </body>
+</html>
